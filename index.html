@@ -9,11 +9,18 @@
 
     <!--* AXIOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--* MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <div id="app">
+    <div id="app" class="container">
+       <ul v-if="email.length==10">
+           <li v-for="mail in email">{{mail}}</li>
+       </ul>
         
     </div>
 
